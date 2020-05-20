@@ -12,9 +12,9 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '8203c37b-5573-4a81-9f5a-4d90c314cd54'
-  imageRepository: 'songnazurevotingappredis'
+  imageRepository: 'azure-vote-front'
   containerRegistry: 'votedevopsacr.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'azure-vote/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'votedevopsacr4d50-auth'
 
