@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: songnazurevotingappredis 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: songnazurevotingappredis 
+    spec:
+      containers:
+        - name: songnazurevotingappredis 
+          image: votedevopsacr.azurecr.io/songnazurevotingappredis
+          ports:
+          - containerPort: 80
